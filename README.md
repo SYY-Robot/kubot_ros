@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Introduction
-> 這是KUBOT機器人共用的ROS workspace，透過腳本選擇機器人、感測器就可以進行仿真、建圖、導航等功能。
+> ***這是KUBOT機器人共用的ROS workspace，透過腳本選擇機器人、感測器就可以進行仿真、建圖、導航等功能。***
 
 
 ## Installation 
@@ -23,8 +23,8 @@ git clone https://github.com/KUBOT-Robot/kubot_ros.git
 ``` 
 
  - 2.1 Full intsall :
-> 這將完整安裝KUBOT 所有ROBOT的底層驅動、仿真模擬、2D SLAM、3D SLAM、加值裝置等
-> 此過程需要github金鑰請與專人聯絡
+> ***這將完整安裝KUBOT 所有ROBOT的底層驅動、仿真模擬、2D SLAM、3D SLAM、加值裝置等***
+> ***此過程需要github金鑰請與專人聯絡***
 
 ```sh
 ./kubot_ros/tools/kubot_install_kubot_all_pkg.sh
@@ -90,28 +90,10 @@ Galiray2 # link
 
 
 
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
+```seq
+Andrew->China: Says Hello
+Note right of China: China thinks\nabout it
+China-->Andrew: How are you?
+Andrew->>China: I am good thanks!
 ```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+### End
