@@ -68,32 +68,15 @@ kubot_bringup
 ## Version History
 
 Suport ROBOT Model : 
+
 Kubot2 (CAGEBOT) # link
+
 Neuronbot2 # link
+
 Wagv # link
+
 Aider # link
+
 Galiray2 # link
 
 ## License
-
-
-
-
-
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-
-
-```seq
-Andrew->China: Says Hello
-Note right of China: China thinks\nabout it
-China-->Andrew: How are you?
-Andrew->>China: I am good thanks!
-```
-### End
