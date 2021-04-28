@@ -16,7 +16,8 @@
 > [Neuronbot2](https://github.com/Adlink-ROS/neuronbot2) 
 > and a large number of ROS users.
 > This package includes the functions to bring up the kubot robot, 2D SLAM, 3D SLAM, 
-> Navigation, drive peripheral equipment and simulate it with your own computer.***
+> Navigation, drive peripheral equipment and simulate it with your own computer.
+> For more instructions, please see [KUBOT_wiki](https://github.com/KUBOT-Robot/kubot_ros/wiki)***
 
 
 ## Installation 
