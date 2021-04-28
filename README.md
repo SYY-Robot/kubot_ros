@@ -10,7 +10,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Introduction
-> ***這是KUBOT機器人共用的ROS workspace，透過腳本選擇機器人、感測器就可以進行仿真、建圖、導航等功能。***
+> ***KUBOT ROS package is developed by Taiwan ShaYangYe Co.Ltd RD400. 
+> Thanks to ROS wiki, [Turtlebot](https://github.com/turtlebot), 
+> [Pibot](https://www.jianshu.com/u/7f508db63608), 
+> [Neuronbot2](https://github.com/Adlink-ROS/neuronbot2) 
+> and a large number of ROS users.
+> This package includes the functions to bring up the kubot robot, to make it 2D SLAM,
+>  3D SLAM, Navigation, drive peripheral equipment and simulate it with your own computer.***
 
 
 ## Installation 
