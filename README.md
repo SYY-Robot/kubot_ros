@@ -11,9 +11,10 @@
 
 ## Introduction
 > ***KUBOT ROS package is developed by Taiwan ShaYangYe Co.Ltd RD400. 
-> Thanks to ROS wiki, [Turtlebot](https://github.com/turtlebot), 
+> Thanks to ROS wiki, 
+> [Neuronbot2](https://github.com/Adlink-ROS/neuronbot2),  
 > [Pibot](https://www.jianshu.com/u/7f508db63608), 
-> [Neuronbot2](https://github.com/Adlink-ROS/neuronbot2) 
+> [Turtlebot](https://github.com/turtlebot), 
 > and a large number of ROS users.
 > This package includes the functions to bring up the KUBOT Robot, 2D SLAM, 3D SLAM, 
 > Navigation, drive peripheral equipment and simulate it with your own computer.
