@@ -15,8 +15,8 @@
 > [Pibot](https://www.jianshu.com/u/7f508db63608), 
 > [Neuronbot2](https://github.com/Adlink-ROS/neuronbot2) 
 > and a large number of ROS users.
-> This package includes the functions to bring up the kubot robot, to make it 2D SLAM,
->  3D SLAM, Navigation, drive peripheral equipment and simulate it with your own computer.***
+> This package includes the functions to bring up the kubot robot, 2D SLAM, 3D SLAM, 
+> Navigation, drive peripheral equipment and simulate it with your own computer.***
 
 
 ## Installation 
