@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rd400/kubot_ros/ros_ws/src/kubot_slam_pkg/third_party_pkg/openslam_gmapping/configfile/configfile_test.cpp
+cstdlib
+-
+iostream
+-
+gmapping/configfile/configfile.h
+/home/rd400/kubot_ros/ros_ws/src/kubot_slam_pkg/third_party_pkg/openslam_gmapping/configfile/gmapping/configfile/configfile.h
+
+/home/rd400/kubot_ros/ros_ws/src/kubot_slam_pkg/third_party_pkg/openslam_gmapping/include/gmapping/configfile/configfile.h
+iostream
+-
+string
+-
+map
+-
+
