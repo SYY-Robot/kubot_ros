@@ -2,6 +2,6 @@
 #
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar"
 
-KERNEL=="ttyUSB*", ATTRS{devpath}=="2.3", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar_1"
+KERNEL=="ttyUSB*", ATTRS{devpath}=="2.2.2", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar_1"
 
-KERNEL=="ttyUSB*", ATTRS{devpath}=="2.4", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar_2"
+KERNEL=="ttyUSB*", ATTRS{devpath}=="2.2.1", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar_2"
