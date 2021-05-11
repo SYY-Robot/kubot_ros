@@ -1,0 +1,16 @@
+#source ros
+source /opt/ros/melodic/setup.bash
+source /opt/ros/melodic/setup.zsh
+
+LOCAL_IP=192.168.5.1
+export ROS_IP=$LOCAL_IP
+export ROS_HOSTNAME=$LOCAL_IP
+export KUBOT_MODEL=kubot2
+export KUBOT_LIDAR=rplidar-a1
+export KUBOT_3DSENSOR=non-3dsensor
+export KUBOT_BOARD=arduino
+export ROS_MASTER_URI=http://$LOCAL_IP:11311
+
+#source kubot
+source /home/kubot/kubot_ros/ros_ws/devel/setup.bash
+source /home/kubot/kubot_ros/ros_ws/devel/setup.zsh
