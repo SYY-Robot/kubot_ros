@@ -69,23 +69,42 @@ else
 fi
 
 echo -e "\033[1;34m Please specify kubot driver board type:\033[1;32m
-    1:arduino(mega2560) 
-    2:stm32(f103) 
-    3:stm32(f407)
-    4:stm32(f429) 
+    1:arduino(mega2560)
+    2.arduino(due)
+    3.teensy(teensy32)
+    4.teensy(teensy40)
+    5.teensy(teensy41) 
+    6:stm32(f103) 
+    7:stm32(f407)
+    8:stm32(f429) 
 \033[1;34m (or other for user defined)\033[1;33m"
 
 read -p "" KUBOT_DIRVER_BOARD_INPUT
 
 if [ "$KUBOT_DIRVER_BOARD_INPUT" = "1" ]; then
     KUBOT_DRIVER_BAUDRATE=115200
-    KUBOT_BOARD='arduino'
+    KUBOT_BOARD='arduino-mega'
 elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "2" ]; then
     KUBOT_DRIVER_BAUDRATE=115200
-    KUBOT_BOARD='stm32f1'
+    KUBOT_BOARD='arduino-due'
 elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "3" ]; then
+    KUBOT_DRIVER_BAUDRATE=250000
+    KUBOT_BOARD='teensy-32'
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "4" ]; then
+    KUBOT_DRIVER_BAUDRATE=500000
+    KUBOT_BOARD='teensy-40'
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "5" ]; then
+    KUBOT_DRIVER_BAUDRATE=1000000
+    KUBOT_BOARD='teensy-41'                
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "6" ]; then
+    KUBOT_DRIVER_BAUDRATE=115200
+    KUBOT_BOARD='stm32f103'
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "7" ]; then
+    KUBOT_DRIVER_BAUDRATE=250000
+    KUBOT_BOARD='stm32f407'
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "8" ]; then
     KUBOT_DRIVER_BAUDRATE=921600
-    KUBOT_BOARD='stm32f4'
+    KUBOT_BOARD='stm32f429'    
 else
     KUBOT_DRIVER_BAUDRATE=115200
     KUBOT_BOARD=$KUBOT_DIRVER_BOARD_INPUT
@@ -102,7 +121,7 @@ echo -e "\033[1;34m Please specify  kubot lidar:\033[1;32m
     7:astra
     8:realsense(d435i)
     9:sick(tim551)
-    10:hokuyo()
+    10:hokuyo(ust-10lx)
     11:two_rplidar(a2)
 \033[1;34m (or other for user defined)\033[1;33m"
 
@@ -134,7 +153,7 @@ elif [ "$KUBOT_LIDAR_INPUT" = "8" ]; then
 elif [ "$KUBOT_LIDAR_INPUT" = "9" ]; then
     KUBOT_LIDAR='sick-tim551'
 elif [ "$KUBOT_LIDAR_INPUT" = "10" ]; then
-    KUBOT_LIDAR='hokuyo-123'
+    KUBOT_LIDAR='hokuyo-10ls'
 elif [ "$KUBOT_LIDAR_INPUT" = "11" ]; then
     KUBOT_LIDAR='two-rplidar-a2'
 else
