@@ -250,7 +250,7 @@ echo "alias kubot_bringup='roslaunch kubot_bringup bringup.launch'" >> ~/.kubotr
 echo "alias kubot_keyboard='roslaunch kubot_control keyboard_teleop.launch'" >> ~/.kubotrc
 echo "alias kubot_robot='roslaunch kubot_bringup robot.launch'" >> ~/.kubotrc 
 
-echo "alias kubot_rqt='rosrun rosrun rqt_reconfigure rqt_reconfigure' ">>~/.kubotrc
+echo "alias kubot_rqt='rosrun rqt_reconfigure rqt_reconfigure' ">>~/.kubotrc
 echo "alias kubot_motor_run='rostopic pub cmd_vel linear x:0.2 y:0.0 z:0.0 angular x:0.0 y:0.0 z:0.0 -r 20'" >> ~/.kubotrc
 echo "alias kubot_motor_show='rosrun rqt_plot rqt_plot /motor1_input /motor1_output /motor2_input /motor2_output'" >> ~/.kubotrc
 echo "alias kubot_linear='rosrun kubot_control calibrate_linear.py'" >> ~/.kubotrc
