@@ -55,8 +55,9 @@ if [ "$ros_version" = "melodic" ]; then
                 ros-${ros_version}-realsense2-camera \
                 ros-${ros_version}-camera-umd \
                 ros-${ros_version}-camera-calibration \
-		ros-${ros_version}-joint-state-publisher-gui \
-		ros-${ros_version}-robot-pose-ekf 
+		        ros-${ros_version}-joint-state-publisher-gui \
+                ros-${ros_version}-timed-roslaunch \
+		        ros-${ros_version}-robot-pose-ekf 
 else
     exit
 fi

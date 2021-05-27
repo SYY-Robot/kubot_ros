@@ -45,11 +45,11 @@ if [ ! ${LOCAL_IP} ]; then
 fi
 
 echo -e "\033[1;34m Please specify kubot robot model:\033[1;32m
-    1:Kubot2(Cagebot)
-    2:WAGV
-    3:Aider
-    4:Neuronbot2
-    5:Galiray2
+    1 : Kubot2(Cagebot)
+    2 : WAGV
+    3 : Aider
+    4 : Neuronbot2
+    5 : Galiray2
 \033[1;34m (or other for user defined) \033[1;33m"
 
 read -p "" KUBOT_MODEL_INPUT
@@ -69,14 +69,14 @@ else
 fi
 
 echo -e "\033[1;34m Please specify kubot driver board type:\033[1;32m
-    1:arduino(mega2560)
-    2.arduino(due)
-    3.teensy(teensy32)
-    4.teensy(teensy40)
-    5.teensy(teensy41) 
-    6:stm32(f103) 
-    7:stm32(f407)
-    8:stm32(f429) 
+    1 : arduino(mega2560)
+    2 : arduino(due)
+    3 : teensy(teensy32)
+    4 : teensy(teensy40)
+    5 : teensy(teensy41) 
+    6 : stm32(f103) 
+    7 : stm32(f407)
+    8 : stm32(f429) 
 \033[1;34m (or other for user defined)\033[1;33m"
 
 read -p "" KUBOT_DIRVER_BOARD_INPUT
@@ -111,18 +111,18 @@ else
 fi
 
 echo -e "\033[1;34m Please specify  kubot lidar:\033[1;32m
-    0:not config
-    1:rplidar(a1)
-    2:rplidar(a2)
-    3:rplidar(a3)
-    4:rplidar(s1) 
-    5:xtion
-    6:kinect(V2)
-    7:astra
-    8:realsense(d435i)
-    9:sick(tim551)
-    10:hokuyo(ust-10lx)
-    11:two_rplidar(a2)
+    0 : not config
+    1 : rplidar(a1)
+    2 : rplidar(a2)
+    3 : rplidar(a3)
+    4 : rplidar(s1) 
+    5 : xtion
+    6 : kinect(V2)
+    7 : astra
+    8 : realsense(d435i)
+    9 : sick(tim551)
+    10 : hokuyo(ust-10lx)
+    11 : two_rplidar(a2)
 \033[1;34m (or other for user defined)\033[1;33m"
 
 read -p "" KUBOT_LIDAR_INPUT
@@ -172,12 +172,13 @@ if [ $KUBOT_DEEP_CAM = 1 ]; then
     echo "deep_cam: $KUBOT_LIDAR"
     KUBOT_3DSENSOR='non-3dsensor'
 else
-    echo -e "\033[1;34m Please specify  kubot 3d sensor:\033[1;32m
-    0:not config
-    1:xtion
-    2:astra
-    3:kinectV2
-    4:realsense(d435i)
+
+echo -e "\033[1;34m Please specify  kubot 3d sensor:\033[1;32m
+    0 : not config
+    1 : xtion
+    2 : astra
+    3 : kinectV2
+    4 : realsense(d435i)
 \033[1;34m (or other for user defined) \033[1;33m"
 
     read -p "" KUBOT_INPUT
