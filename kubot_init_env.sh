@@ -12,6 +12,7 @@ if ! [ $KUBOT_ENV_INITIALIZED ]; then
     echo " "
     sudo cp rules/kubot.rules  /etc/udev/rules.d
     sudo cp rules/rplidar.rules  /etc/udev/rules.d
+    sudo cp rules/81-sick-tim3xx.rules /etc/udev/udev/rules.d
     echo " "
     echo "Restarting udev"
     echo ""
