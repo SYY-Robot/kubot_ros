@@ -14,9 +14,9 @@
 > Thanks to ROS wiki, [Neuronbot2](https://www.adlinktech.com/Products/ROS2_Solution/ROS_Opensource_Solution/NeuronBot?Lang=en), [Pibot](https://www.jianshu.com/u/7f508db63608), [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/), and a large number of ROS users.
 > This package includes the functions to bring up the KUBOT Robot, 2D SLAM, 3D SLAM, 
 > Navigation, drive peripheral equipment and simulate it with your own computer.
-> For more instructions, please see [KUBOT Wiki](https://github.com/KUBOT-Robot/kubot_ros/wiki).***
+> For more instructions, please refer to [KUBOT wiki](https://github.com/KUBOT-Robot/kubot_ros/wiki).***
 
-# Installation 
+# Install
 
 1. [Install ROS](http://wiki.ros.org/ROS/Installation)
 2. Create KUBOT  ROS1 workspace 
@@ -25,15 +25,13 @@
 git clone https://github.com/KUBOT-Robot/kubot_ros.git
 ``` 
 
- - 2.1 Full intsall :
-> **This will completely install all KUBOT Robot's underlying drivers, simulation, 2D SLAM, 3D SLAM, value-added devices, etc.**
-> **This process requires a github key, please contact someone.**
+3. Full intsall :
+> *This will completely install all the underlying drivers, simulations, 2D SLAM, 3D SLAM and value-added equipment of KUBOT Robot. This process requires a github key, please contact the business window.*
 
 ```sh
 ./kubot_ros/tools/kubot_install_kubot_all_pkg.sh
 ./kubot_ros/tools/kubot_install_ros_dep.sh
 ```
-
 
 # Initialization environment
 
@@ -52,7 +50,7 @@ cd ~/kubot_ros/
 source ~/.bashrc
 ```
 
-This script uses bash shell by default. If you use other shells, please modify all  [bash]() words in the script.
+This script uses bash shell by default. If you use other shells, please modify all  [bash](https://github.com/KUBOT-Robot/kubot_ros/blob/melodic/kubot_init_env.sh) words in the script.
 
 ```sh
 cd ~/ros_ws/
