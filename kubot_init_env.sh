@@ -57,14 +57,19 @@ read -p "" KUBOT_MODEL_INPUT
 
 if [ "$KUBOT_MODEL_INPUT" = "1" ]; then
     KUBOT_MODEL='kubot2'
+    KUBOT_MODEL_TYPE='diff-corrected'
 elif [ "$KUBOT_MODEL_INPUT" = "2" ]; then
     KUBOT_MODEL='wagv'
+    KUBOT_MODEL_TYPE='diff-corrected'
 elif [ "$KUBOT_MODEL_INPUT" = "3" ]; then
     KUBOT_MODEL='aider'
+    KUBOT_MODEL_TYPE='diff-corrected'
 elif [ "$KUBOT_MODEL_INPUT" = "4" ]; then
     KUBOT_MODEL='neuronbot2'
+    KUBOT_MODEL_TYPE='diff-corrected'  
 elif [ "$KUBOT_MODEL_INPUT" = "5" ]; then
     KUBOT_MODEL='galiray2'
+    KUBOT_MODEL_TYPE='omni-corrected'
 else
     KUBOT_MODEL=$KUBOT_MODEL_INPUT 
 fi
@@ -202,6 +207,7 @@ fi
 echo "export ROS_IP=\`echo \$LOCAL_IP\`" >> ~/.kubotrc
 echo "export ROS_HOSTNAME=\`echo \$LOCAL_IP\`" >> ~/.kubotrc
 echo "export KUBOT_MODEL=${KUBOT_MODEL}" >> ~/.kubotrc
+echo "export KUBOT_MODEL_TYPE=${KUBOT_MODEL_TYPE}">> ~/.kubotrc
 echo "export KUBOT_LIDAR=${KUBOT_LIDAR}" >> ~/.kubotrc
 echo "export KUBOT_3DSENSOR=${KUBOT_3DSENSOR}" >> ~/.kubotrc
 echo "export KUBOT_BOARD=${KUBOT_BOARD}" >> ~/.kubotrc

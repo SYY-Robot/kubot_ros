@@ -9,9 +9,9 @@
 [![robot](https://img.shields.io/badge/robot-KUBOT-orange)](http://www.shayangye.com/)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-## Introduction
+# Introduction
 > ***KUBOT ROS package is developed by Taiwan ShaYangYe Co.Ltd RD400. 
-> Thanks to ROS wiki, 
+> Thanks to ROS wiki,
 > [Neuronbot2](https://github.com/Adlink-ROS/neuronbot2),  
 > [Pibot](https://www.jianshu.com/u/7f508db63608), 
 > [Turtlebot](https://github.com/turtlebot), 
@@ -20,8 +20,7 @@
 > Navigation, drive peripheral equipment and simulate it with your own computer.
 > For more instructions, please see [KUBOT Wiki](https://github.com/KUBOT-Robot/kubot_ros/wiki).***
 
-
-## Installation 
+# Installation 
 
 1. [Install ROS](http://wiki.ros.org/ROS/Installation)
 2. Create KUBOT  ROS1 workspace 
@@ -31,8 +30,8 @@ git clone https://github.com/KUBOT-Robot/kubot_ros.git
 ``` 
 
  - 2.1 Full intsall :
-> ***這將完整安裝KUBOT 所有ROBOT的底層驅動、仿真模擬、2D SLAM、3D SLAM、加值裝置等***
-> ***此過程需要github金鑰請與專人聯絡***
+> **This will completely install all KUBOT Robot's underlying drivers, simulation, 2D SLAM, 3D SLAM, value-added devices, etc.**
+> **This process requires a github key, please contact someone.**
 
 ```sh
 ./kubot_ros/tools/kubot_install_kubot_all_pkg.sh
@@ -40,18 +39,18 @@ git clone https://github.com/KUBOT-Robot/kubot_ros.git
 ```
 
 
-## Initialization environment
+# Initialization environment
 
 ```sh
 cd ~/kubot_ros/
 ./kubot_init_env.sh
 ```
 
- - 選擇 KUBOT機器人型號
- - 選擇 控制器型號
- - 選擇 激光雷達型號
- - 選擇 深度鏡頭型號
- - 選擇 ROS Master or Slave
+ - Please specift kubot robot model：
+ - Please spacify kubot driver board type :
+ - Please specify kubot lidar :
+ - Please specify kubot 3d Sensor ：
+ - Please specify current machine type :
 
 ```sh
 source ~/.bashrc
@@ -64,27 +63,21 @@ cd ~/ros_ws/
 catkin_make
 source ~/.bashrc
 ```
-接著就可以享受您的機器人 : 
+
+Then you can enjoy the various functions of KUBOT Robot:
+
 ```sh
 example : 
-roslaunch kubot_navigation nav.launch
+roslaunch kubot_description model.launch open_rviz:=true
 kubot_bringup
 ```
 
-## Repository Contents
+# Version History
 
-## Version History
+Supported driver board version:
+- [X] V1.Rabbit.1
 
-Suport ROBOT Model : 
+# License
+Released under the [Apache 2.0 license](https://opensource.org/licenses/Apache-2.0).
 
-Kubot2 (CAGEBOT) # link
-
-Neuronbot2 # link
-
-Wagv # link
-
-Aider # link
-
-Galiray2 # link
-
-## License
+© 2021 [Hong](https://www.linkedin.com/in/hong-yun-966a9a20b)
