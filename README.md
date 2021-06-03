@@ -55,7 +55,7 @@
     ```sh
     source ~/.bashrc
     ```
-> This script uses bash shell by default. If you use other shells, please modify all `bash` words in the script.
+   > This script uses bash shell by default. If you use other shells, please modify all `bash` words in the script.
 
 5. catkin_make
 
