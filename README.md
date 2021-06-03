@@ -60,7 +60,7 @@
 5. catkin_make
 
     ```sh
-    cd ~/ros_ws/
+    cd ros_ws/
     catkin_make
     source ~/.bashrc
     ```
