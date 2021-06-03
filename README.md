@@ -34,7 +34,7 @@
 3. Full intsall :
 
     ```sh
-    ./kubot_ros/tools/kubot_install_kubot_all_pkg.sh
+    ./kubot_ros/tools/kubot_install_all_pkg.sh
     ./kubot_ros/tools/kubot_install_ros_dep.sh
     ```
 > *This will completely install all the underlying drivers, simulations, 2D SLAM, 3D SLAM and value-added equipment of KUBOT Robot. This process requires a github key, please contact the business window.*
