@@ -184,7 +184,8 @@ echo -e "\033[1;34m Please specify  kubot 3d sensor:\033[1;32m
     1 : xtion
     2 : astra
     3 : kinectV2
-    4 : realsense(d435i)
+    4 : intel realsense(d435i)
+    5 : logitech(c615)
 \033[1;34m (or other for user defined) \033[1;33m"
 
     read -p "" KUBOT_INPUT
@@ -199,6 +200,8 @@ echo -e "\033[1;34m Please specify  kubot 3d sensor:\033[1;32m
         KUBOT_3DSENSOR='kinectV2'
     elif [ "$KUBOT_INPUT" = "4" ]; then
         KUBOT_3DSENSOR='d435i'
+    elif [ "$KUBOT_INPUT" = "5" ]; then
+        KUBOT_3DSENSOR='logi-c615' 
     else
         KUBOT_3DSENSOR=$KUBOT_INPUT
     fi
