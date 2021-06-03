@@ -1,6 +1,6 @@
 # KUBOT_ROS1_Package 
 
-[![Apache-2.0 License](https://img.shields.io/badge/license-Apache2.0-purple)](https://opensource.org/licenses/Apache-2.0).
+[![Apache-2.0 License](https://img.shields.io/badge/license-Apache2.0-purple)](https://opensource.org/licenses/Apache-2.0)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Platform Badge](https://img.shields.io/badge/platform-ROS_Melodic-blue.svg)](http://wiki.ros.org/melodic)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -32,15 +32,14 @@
     ``` 
 
 3. Full intsall :
-> *This will completely install all the underlying drivers, simulations, 2D SLAM, 3D SLAM and value-added equipment of KUBOT Robot. This process requires a github key, please contact the business window.*
 
     ```sh
     ./kubot_ros/tools/kubot_install_kubot_all_pkg.sh
     ./kubot_ros/tools/kubot_install_ros_dep.sh
     ```
+> *This will completely install all the underlying drivers, simulations, 2D SLAM, 3D SLAM and value-added equipment of KUBOT Robot. This process requires a github key, please contact the business window.*
 
 4. Select the robot to be used through initialization environment:
-> This script uses bash shell by default. If you use other shells, please modify all `bash` words in the script.
 
     ```sh
     cd ~/kubot_ros/
@@ -56,6 +55,7 @@
     ```sh
     source ~/.bashrc
     ```
+> This script uses bash shell by default. If you use other shells, please modify all `bash` words in the script.
 
 5. catkin_make
 
