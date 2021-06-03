@@ -65,7 +65,7 @@
     source ~/.bashrc
     ```
 
-**Then you can enjoy the various functions of KUBOT Robot:**
+**Then you can enjoy the various functions of KUBOT Robot~**
 
 Example : 
 
