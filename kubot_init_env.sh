@@ -5,14 +5,15 @@ sudo ln -sf ~/kubot_ros/tools/kubot_view_env.sh /usr/bin/kubot_view_env
 sudo ln -sf ~/kubot_ros/tools/kubot_install_ros.sh /usr/bin/kubot_install_ros
 
 if ! [ $KUBOT_ENV_INITIALIZED ]; then
+    echo "# Load KUBOT's environment variables." >> ~/.bashrc
     echo "export KUBOT_ENV_INITIALIZED=1" >> ~/.bashrc
     echo "source ~/.kubotrc" >> ~/.bashrc
     #rules
     echo -e "\033[1;32m setup kubot modules"
     echo " "
-    sudo cp rules/kubot.rules  /etc/udev/rules.d
-    sudo cp rules/rplidar.rules  /etc/udev/rules.d
-    sudo cp rules/81-sick-tim3xx.rules /etc/udev/udev/rules.d
+    sudo cp rules/71-kubot-driver-board.rules  /etc/udev/rules.d/
+    sudo cp rules/72-kubot-lidar.rules  /etc/udev/rules.d/
+    sudo cp rules/73-kubot-camera.rules /etc/udev/rules.d/
     echo " "
     echo "Restarting udev"
     echo ""

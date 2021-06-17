@@ -1,9 +1,11 @@
-# set the udev rule , make the device_port be fixed by rplidar
+# set the udev rule , make the device_port be fixed by kubot lidar.
 
-# original
+# rplidar
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar"
 
 # two rplidar mixing
 KERNEL=="ttyUSB*", ATTRS{devpath}=="2.2.2", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar_1"
-
 KERNEL=="ttyUSB*", ATTRS{devpath}=="2.2.1", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar_2"
+
+# sick-tim3xx
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="19a2", ATTR{idProduct}=="5001", GROUP="plugdev"
