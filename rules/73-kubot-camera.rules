@@ -1,4 +1,7 @@
 # set the udev rule , make the device_port be fixed by kubot camera.
 
-# logi-c615
-KERNEL=="ttyUSB*", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="0826", MODE:="0777", SYMLINK+="logi-c615"
+# Logitech, Inc HD Webcam C525
+KERNEL=="video*", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="0826", MODE:="0777", SYMLINK+="logi_c525"
+
+# Logitech, Inc HD Webcam C615
+KERNEL=="video*", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="082C", MODE:="0777", SYMLINK+="logi_c615"
