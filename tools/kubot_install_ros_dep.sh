@@ -8,8 +8,8 @@ sudo apt-get update
 
 code_name=$(lsb_release -sc)
 
-if [ "$code_name" = "bionic" ]; then
-    ros_version="melodic"
+if [ "$code_name" = "xenial" ]; then
+    ros_version="kinetic"
 else
     echo "KUBOT not support "$code_name
     exit
