@@ -23,8 +23,8 @@ if ! [ $KUBOT_ENV_INITIALIZED ]; then
 fi
 
 code_name=$(lsb_release -sc)
-if [ "$code_name" = "bionic" ]; then
-    ros_version="melodic"
+if [ "$code_name" = "xenial" ]; then
+    ros_version="kinetic"
 else
     echo -e "\033[1;31m KUBOT not support "$code_name"\033[0m"
     exit
