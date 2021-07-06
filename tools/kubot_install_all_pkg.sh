@@ -13,7 +13,7 @@ git config --global credential.helper cache
 
 echo "ros:" $ros_version
 
-if [ "$ros_version" = "melodic" ]; then
+if [ "$ros_version" = "kinetic" ]; then
 cd 
 cd ~/kubot_ros/ros_ws/src/
 	git clone https://github.com/KUBOT-Robot/kubot_base_driver.git -b kinetic-devel

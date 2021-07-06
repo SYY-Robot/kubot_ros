@@ -17,7 +17,7 @@ fi
 
 echo "ros:" $ros_version
 
-if [ "$ros_version" = "melodic" ]; then
+if [ "$ros_version" = "kinetic" ]; then
 
     cd ~/kubot_ros/ros_ws/
     rosdep update
