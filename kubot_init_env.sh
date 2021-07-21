@@ -50,7 +50,7 @@ echo -e "\033[1;34m Please specify kubot robot model:\033[1;32m
     1 : Kubot2(Cagebot)
     2 : WAGV
     3 : Aider
-    4 : Neuronbot2
+
     5 : Galiray2
 \033[1;34m (or other for user defined) \033[1;33m"
 
@@ -78,7 +78,6 @@ fi
 echo -e "\033[1;34m Please specify kubot driver board type:\033[1;32m
     1 : arduino(mega2560)
     2 : arduino(due)
-    3 : teensy(teensy32)
     4 : teensy(teensy40)
     5 : teensy(teensy41) 
     6 : stm32(f103) 
@@ -94,9 +93,6 @@ if [ "$KUBOT_DIRVER_BOARD_INPUT" = "1" ]; then
 elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "2" ]; then
     KUBOT_DRIVER_BAUDRATE=115200
     KUBOT_BOARD='arduino-due'
-elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "3" ]; then
-    KUBOT_DRIVER_BAUDRATE=250000
-    KUBOT_BOARD='teensy-32'
 elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "4" ]; then
     KUBOT_DRIVER_BAUDRATE=500000
     KUBOT_BOARD='teensy-40'
