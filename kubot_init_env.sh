@@ -48,9 +48,9 @@ fi
 
 echo -e "\033[1;34m Please specify kubot robot model:\033[1;32m
     1 : Kubot2(Cagebot)
-    2 : WAGV
-    3 : Aider
 
+    3 : WAGV
+    4 : Aider
     5 : Galiray2
 \033[1;34m (or other for user defined) \033[1;33m"
 
@@ -60,14 +60,14 @@ if [ "$KUBOT_MODEL_INPUT" = "1" ]; then
     KUBOT_MODEL='kubot2'
     KUBOT_MODEL_TYPE='diff-corrected'
 elif [ "$KUBOT_MODEL_INPUT" = "2" ]; then
-    KUBOT_MODEL='wagv'
-    KUBOT_MODEL_TYPE='diff-corrected'
-elif [ "$KUBOT_MODEL_INPUT" = "3" ]; then
-    KUBOT_MODEL='aider'
-    KUBOT_MODEL_TYPE='diff-corrected'
-elif [ "$KUBOT_MODEL_INPUT" = "4" ]; then
     KUBOT_MODEL='neuronbot2'
     KUBOT_MODEL_TYPE='diff-corrected'  
+elif [ "$KUBOT_MODEL_INPUT" = "3" ]; then
+    KUBOT_MODEL='wagv'
+    KUBOT_MODEL_TYPE='diff-corrected'
+elif [ "$KUBOT_MODEL_INPUT" = "4" ]; then
+    KUBOT_MODEL='aider'
+    KUBOT_MODEL_TYPE='diff-corrected'
 elif [ "$KUBOT_MODEL_INPUT" = "5" ]; then
     KUBOT_MODEL='galiray2'
     KUBOT_MODEL_TYPE='omni-corrected'
@@ -78,11 +78,11 @@ fi
 echo -e "\033[1;34m Please specify kubot driver board type:\033[1;32m
     1 : arduino(mega2560)
     2 : arduino(due)
-    4 : teensy(teensy40)
-    5 : teensy(teensy41) 
-    6 : stm32(f103) 
-    7 : stm32(f407)
-    8 : stm32(f429) 
+    3 : teensy(teensy40)
+    4 : teensy(teensy41) 
+    5 : stm32(f103) 
+    6 : stm32(f407)
+    7 : stm32(f429) 
 \033[1;34m (or other for user defined)\033[1;33m"
 
 read -p "" KUBOT_DIRVER_BOARD_INPUT
@@ -93,19 +93,19 @@ if [ "$KUBOT_DIRVER_BOARD_INPUT" = "1" ]; then
 elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "2" ]; then
     KUBOT_DRIVER_BAUDRATE=115200
     KUBOT_BOARD='arduino-due'
-elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "4" ]; then
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "3" ]; then
     KUBOT_DRIVER_BAUDRATE=500000
     KUBOT_BOARD='teensy-40'
-elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "5" ]; then
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "4" ]; then
     KUBOT_DRIVER_BAUDRATE=1000000
     KUBOT_BOARD='teensy-41'                
-elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "6" ]; then
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "5" ]; then
     KUBOT_DRIVER_BAUDRATE=115200
     KUBOT_BOARD='stm32f103'
-elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "7" ]; then
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "6" ]; then
     KUBOT_DRIVER_BAUDRATE=250000
     KUBOT_BOARD='stm32f407'
-elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "8" ]; then
+elif [ "$KUBOT_DIRVER_BOARD_INPUT" = "7" ]; then
     KUBOT_DRIVER_BAUDRATE=921600
     KUBOT_BOARD='stm32f429'    
 else
@@ -233,11 +233,12 @@ fi
 echo "export ROS_MASTER_URI=`echo http://${ROS_MASTER_IP_STR}:11311`" >> ~/.kubotrc
 
 echo -e "\033[1;35m*****************************************************************"
-echo "model:" $KUBOT_MODEL 
-echo "lidar:" $KUBOT_LIDAR  
-echo "3d senser:" $KUBOT_3DSENSOR
-echo "local_ip:" ${LOCAL_IP} 
-echo "robot_ip:" ${ROS_MASTER_IP}
+echo " model:" $KUBOT_MODEL
+echo " driver board:" $KUBOT_BOARD 
+echo " lidar:" $KUBOT_LIDAR  
+echo " 3d sensor:" $KUBOT_3DSENSOR
+echo " local_ip:" ${LOCAL_IP} 
+echo " robot_ip:" ${ROS_MASTER_IP}
 echo ""
 echo -e "\033[1;34m Please execute\033[1;36m source ~/.bashrc\033[1;34m to make the configure effective\033[1;34m"
 echo -e "\033[1;35m*****************************************************************\033[0m"

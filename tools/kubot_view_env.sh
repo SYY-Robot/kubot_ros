@@ -1,12 +1,7 @@
 #!/bin/bash
 
 code_name=$(lsb_release -sc)
-
-if [ "$code_name" = "trusty" ]; then
-    ros_version="indigo"
-elif [ "$code_name" = "xenial" ]; then
-    ros_version="kinetic"
-elif [ "$code_name" = "bionic" ]; then
+if [ "$code_name" = "bionic" ]; then
     ros_version="melodic"
 else
     echo -e "\033[1;31m KUBOT not support "$code_name"\033[0m"
@@ -23,9 +18,8 @@ echo -e "\033[1;33mROS_MASTER_URI:          "$ROS_MASTER_URI
 echo -e "\033[1;34mROS_IP:                  "$ROS_IP
 echo -e "\033[1;33mROS_HOSTNAME:            "$ROS_HOSTNAME
 echo -e "\033[1;34mKUBOT_MODEL:             "$KUBOT_MODEL
+echo -e "\033[1;34mKUBOT_MODEL_TYPE:        "$KUBOT_MODEL_TYPE
 echo -e "\033[1;33mKUBOT_LIDAR:             "$KUBOT_LIDAR
 echo -e "\033[1;34mKUBOT_BOARD:             "$KUBOT_BOARD
 echo -e "\033[1;33mKUBOT_3DSENSOR:          "$KUBOT_3DSENSOR
 echo -e "\033[1;35m*****************************************************************\033[0m"
-
-# KUBOT
