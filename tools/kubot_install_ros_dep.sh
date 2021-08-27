@@ -8,8 +8,8 @@ sudo apt-get update
 
 code_name=$(lsb_release -sc)
 
-if [ "$code_name" = "bionic" ]; then
-    ros_version="melodic"
+if [ "$code_name" = "focal" ]; then
+    ros_version="noetic"
 else
     echo "KUBOT not support "$code_name
     exit
@@ -17,11 +17,11 @@ fi
 
 echo "ros:" $ros_version
 
-if [ "$ros_version" = "melodic" ]; then
+if [ "$ros_version" = "noetic" ]; then
 
     cd ~/kubot_ros/ros_ws/
     rosdep update
-    rosdep install --from-paths src --ignore-src -r -y --rosdistro melodic
+    rosdep install --from-paths src --ignore-src -r -y --rosdistro noetic
 
     #cd ~/kubot_ros/ros_ws/src/kubot_tools
     #git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
@@ -31,26 +31,26 @@ if [ "$ros_version" = "melodic" ]; then
     #git clone https://github.com/ros-drivers/freenect_stack.git
     
     #sudo apt-get -y --allow-unauthenticated install ros-${ros_version}-ros-base  \
-            #    ros-${ros_version}-yocs-velocity-smoother \
-            #    ros-${ros_version}-slam-karto  \
-            #    ros-${ros_version}-hector-mapping \
-            #    ros-${ros_version}-hector-geotiff  \
-            #    ros-${ros_version}-hector-trajectory-server \
-            #    ros-${ros_version}-realsense2-camera \
-		    #    ros-${ros_version}-rtabmap* \
-		    #    ros-${ros_version}-cartographer-ros \
-		    #    ros-${ros_version}-cartographer-rviz \
+	#    ros-${ros_version}-yocs-velocity-smoother \
+	#    ros-${ros_version}-slam-karto  \
+	#    ros-${ros_version}-hector-mapping \
+	#    ros-${ros_version}-hector-geotiff  \
+	#    ros-${ros_version}-hector-trajectory-server \
+	#    ros-${ros_version}-realsense2-camera \
+	#    ros-${ros_version}-rtabmap* \
+	#    ros-${ros_version}-cartographer-ros \
+	#    ros-${ros_version}-cartographer-rviz \
 
     cd ..
 
     sudo apt-get -y --allow-unauthenticated install ros-${ros_version}-ros-base  \
-                ros-${ros_version}-slam-gmapping \
-                ros-${ros_version}-navigation \
+		ros-${ros_version}-slam-gmapping \
+		ros-${ros_version}-navigation \
                 ros-${ros_version}-xacro \
-                ros-${ros-version}-laser_filters \
+                ros-${ros_version}-laser-filters \
                 ros-${ros_version}-robot-state-publisher \
                 ros-${ros_version}-joint-state-publisher \
-            	ros-${ros_version}-joint-state-publisher-gui \
+            	 ros-${ros_version}-joint-state-publisher-gui \
                 ros-${ros_version}-teleop-twist-* \
                 ros-${ros_version}-control-msgs \
                 ros-${ros_version}-kdl-parser-py \
@@ -65,11 +65,11 @@ if [ "$ros_version" = "melodic" ]; then
                 ros-${ros_version}-tf-conversions \
                 ros-${ros_version}-orocos-kdl \
                 ros-${ros_version}-camera-umd \
-		        ros-${ros_version}-libuvc* \
+		ros-${ros_version}-libuvc* \
                 ros-${ros_version}-camera-calibration \
                 ros-${ros_version}-timed-roslaunch \
                 ros-${ros_version}-web-video-server \
-		        ros-${ros_version}-robot-pose-ekf 
+		ros-${ros_version}-robot-pose-ekf 
 else
     exit
 fi
