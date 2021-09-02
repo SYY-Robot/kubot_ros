@@ -47,7 +47,7 @@ if [ "$ros_version" = "melodic" ]; then
                 ros-${ros_version}-slam-gmapping \
                 ros-${ros_version}-navigation \
                 ros-${ros_version}-xacro \
-                ros-${ros-version}-laser_filters \
+                ros-${ros_version}-laser-filters \
                 ros-${ros_version}-robot-state-publisher \
                 ros-${ros_version}-joint-state-publisher \
             	ros-${ros_version}-joint-state-publisher-gui \
