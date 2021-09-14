@@ -21,7 +21,7 @@ if [ "$ros_version" = "kinetic" ]; then
 
     cd ~/kubot_ros/ros_ws/
     rosdep update
-    rosdep install --from-paths src --ignore-src -r -y --rosdistro melodic
+    rosdep install --from-paths src --ignore-src -r -y --rosdistro kinetic
 
     #cd ~/kubot_ros/ros_ws/src/kubot_tools
     #git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git

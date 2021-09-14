@@ -4,7 +4,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Platform Badge](https://img.shields.io/badge/platform-ROS_Kinetic-blue.svg)](http://wiki.ros.org/melodic)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![version](https://img.shields.io/badge/version-0.0.1-green)](https://robot.shayangye.com/robots/59)
+[![version](https://img.shields.io/badge/version-1.0.1-green)](https://robot.shayangye.com/robots/59)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![robot](https://img.shields.io/badge/robot-KUBOT-orange)](http://www.shayangye.com/)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -82,4 +82,4 @@ Supported driver board version:
 # License
 Released under the [Apache 2.0 license](https://opensource.org/licenses/Apache-2.0).
 
-© 2021 [Hong](https://www.linkedin.com/in/hong-yun-966a9a20b)
+© 2021 [Hong](https://www.linkedin.com/in/yunhong-wang-966a9a20b/)
