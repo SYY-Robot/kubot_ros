@@ -52,6 +52,9 @@ echo -e "\033[1;34m Please specify kubot robot model:\033[1;32m
     3 : WAGV
     4 : Aider
     5 : Galiray2
+
+    s3 : Sample There-Omni-Wheel-Omnidirectional-Model
+
 \033[1;34m (or other for user defined) \033[1;33m"
 
 read -p "" KUBOT_MODEL_INPUT
@@ -61,7 +64,7 @@ if [ "$KUBOT_MODEL_INPUT" = "1" ]; then
     KUBOT_MODEL_TYPE='diff-corrected'
 elif [ "$KUBOT_MODEL_INPUT" = "2" ]; then
     KUBOT_MODEL='neuronbot2'
-    KUBOT_MODEL_TYPE='diff-corrected'  
+    KUBOT_MODEL_TYPE='diff-corrected'
 elif [ "$KUBOT_MODEL_INPUT" = "3" ]; then
     KUBOT_MODEL='wagv'
     KUBOT_MODEL_TYPE='diff-corrected'
@@ -71,8 +74,27 @@ elif [ "$KUBOT_MODEL_INPUT" = "4" ]; then
 elif [ "$KUBOT_MODEL_INPUT" = "5" ]; then
     KUBOT_MODEL='galiray2'
     KUBOT_MODEL_TYPE='omni-corrected'
+elif [ "$KUBOT_MODEL_INPUT" = "s1" ]; then
+    KUBOT_MODEL='2wd_diff'
+    KUBOT_MODEL_TYPE='diff-corrected'
+elif [ "$KUBOT_MODEL_INPUT" = "s2" ]; then
+    KUBOT_MODEL='4wd_diff'
+    KUBOT_MODEL_TYPE='diff-corrected'
+elif [ "$KUBOT_MODEL_INPUT" = "s3" ]; then
+    KUBOT_MODEL='3wd_omni'
+    KUBOT_MODEL_TYPE='omni-corrected'
+elif [ "$KUBOT_MODEL_INPUT" = "s4" ]; then
+    KUBOT_MODEL='4wd_omni'
+    KUBOT_MODEL_TYPE='omni-corrected'
+elif [ "$KUBOT_MODEL_INPUT" = "s5" ]; then
+    KUBOT_MODEL='4wd_mecanum'
+    KUBOT_MODEL_TYPE='omni-corrected'
+elif [ "$KUBOT_MODEL_INPUT" = "s6" ]; then
+    KUBOT_MODEL='4wd_arkermann'
+    KUBOT_MODEL_TYPE='diff-corrected'
 else
-    KUBOT_MODEL=$KUBOT_MODEL_INPUT 
+    KUBOT_MODEL=$KUBOT_MODEL_INPUT
+    KUBOT_MODEL_TYPE='diff-corrected'
 fi
 
 echo -e "\033[1;34m Please specify kubot driver board type:\033[1;32m
