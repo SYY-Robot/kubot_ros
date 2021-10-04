@@ -48,13 +48,9 @@ fi
 
 echo -e "\033[1;34m Please specify kubot robot model:\033[1;32m
     1 : Kubot2(Cagebot)
-
     3 : WAGV
     4 : Aider
     5 : Galiray2
-
-    s3 : Sample There-Omni-Wheel-Omnidirectional-Model
-
 \033[1;34m (or other for user defined) \033[1;33m"
 
 read -p "" KUBOT_MODEL_INPUT
