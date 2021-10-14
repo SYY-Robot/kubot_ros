@@ -51,6 +51,7 @@ echo -e "\033[1;34m Please specify kubot robot model:\033[1;32m
     3 : WAGV
     4 : Aider
     5 : Galiray2
+    6 : Fullon
 \033[1;34m (or other for user defined) \033[1;33m"
 
 read -p "" KUBOT_MODEL_INPUT
@@ -70,6 +71,9 @@ elif [ "$KUBOT_MODEL_INPUT" = "4" ]; then
 elif [ "$KUBOT_MODEL_INPUT" = "5" ]; then
     KUBOT_MODEL='galiray2'
     KUBOT_MODEL_TYPE='omni-corrected'
+elif [ "$KUBOT_MODEL_INPUT" = "" ]; then
+    KUBOT_MODEL='fullon'
+    KUBOT_MODEL_TYPE='diff-corrected'
 elif [ "$KUBOT_MODEL_INPUT" = "s1" ]; then
     KUBOT_MODEL='2wd_diff'
     KUBOT_MODEL_TYPE='diff-corrected'
