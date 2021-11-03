@@ -1,3 +1,4 @@
 #! /bin/bash
 
-sudo ./kubot_usb_reset /dev/kubot
+cd 
+sudo ./kubot_ros/tools/jetson_tools/kubot_usb_reset /dev/kubot
