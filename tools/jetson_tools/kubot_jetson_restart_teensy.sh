@@ -19,5 +19,5 @@ sudo chmod +x kubot_usb_reset
 sudo ./kubot_usb_reset /dev/bus/usb/001/010
 
 tput setaf 2
-echo "Finish resey!"
+echo "Finish reset!"
 tput sgr0
