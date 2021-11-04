@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     }
 
     printf("Waiting for device\n");
-    sleep(10);
+    sleep(20);
     printf("Reset successful\n");
 
     close(fd);
