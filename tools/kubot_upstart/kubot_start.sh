@@ -27,7 +27,7 @@ echo "KUBOT_BOARD:             $KUBOT_BOARD" >> $log_file
 
 # reset teensy
 cd 
-./kubot_ros/tools/jetson_tools/kubot_jetson_restart_teensy.sh
+sudo ./kubot_ros/tools/jetson_tools/kubot_jetson_restart_teensy.sh
 
 # add launch file
 # roslaunch kubot_slam_2d gmapping_with_robot.launch
