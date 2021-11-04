@@ -33,6 +33,9 @@ int main(int argc, char **argv)
         perror("Error in ioctl");
         return 1;
     }
+
+    printf("Waiting for device\n");
+    sleep(10);
     printf("Reset successful\n");
 
     close(fd);
