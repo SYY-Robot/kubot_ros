@@ -26,6 +26,7 @@ echo "KUBOT_MODEL_TYPE:        $KUBOT_MODEL_TYPE" >> $log_file
 echo "KUBOT_LIDAR:             $KUBOT_LIDAR" >> $log_file
 echo "KUBOT_3DSENSOR:	       $KUBOT_3DSENSOR" >> $log_file
 echo "KUBOT_BOARD:             $KUBOT_BOARD" >> $log_file
+echo "KUBOT_DRIVER_BAUDRATE:   $KUBOT_DRIVER_BAUDRATE" >> $log_file
 
 for i in $( rosnode list ); do
     rosnode kill $i;

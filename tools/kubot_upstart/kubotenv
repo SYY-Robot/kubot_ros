@@ -9,6 +9,7 @@ export KUBOT_MODEL_TYPE=diff-corrected
 export KUBOT_LIDAR=rplidar-a1
 export KUBOT_3DSENSOR=non-3dsensor
 export KUBOT_BOARD=arduino-mega
+export KUBOT_DRIVER_BAUDRATE=115200
 export ROS_MASTER_URI=http://$LOCAL_IP:11311
 
 #source kubot
