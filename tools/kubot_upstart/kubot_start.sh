@@ -25,9 +25,5 @@ echo "KUBOT_LIDAR:             $KUBOT_LIDAR" >> $log_file
 echo "KUBOT_3DSENSOR:	       $KUBOT_3DSENSOR" >> $log_file
 echo "KUBOT_BOARD:             $KUBOT_BOARD" >> $log_file
 
-# reset teensy
-cd 
-sudo ./kubot_ros/tools/jetson_tools/kubot_jetson_restart_teensy.sh
-
 # add launch file
-# roslaunch kubot_slam_2d gmapping_with_robot.launch
+roslaunch kubot_slam_2d gmapping_with_robot.launch
