@@ -20,7 +20,7 @@
  and a large number of ROS users.
  This package includes the functions to bring up the KUBOT Robot, 2D SLAM, 3D SLAM, 
  Navigation, drive peripheral equipment and simulate it with your own computer.
- For more instructions, please refer to [KUBOT wiki](https://github.com/KUBOT-Robot/kubot_ros/wiki).*
+ For more instructions, please refer to [KUBOT wiki](https://github.com/SYY-Robot/kubot_ros/wiki).*
 
 # Install
 
@@ -28,7 +28,7 @@
 2. Create KUBOT  ROS1 workspace 
 
     ```sh
-    git clone https://github.com/KUBOT-Robot/kubot_ros.git
+    git clone https://github.com/SYY-Robot/kubot_ros.git
     ``` 
 
 3. Full intsall :
