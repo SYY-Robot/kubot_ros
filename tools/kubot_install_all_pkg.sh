@@ -16,9 +16,9 @@ echo "ros:" $ros_version
 if [ "$ros_version" = "melodic" ]; then
 cd 
 cd ~/kubot_ros/ros_ws/src/
-	git clone https://github.com/KUBOT-Robot/kubot_base_driver.git -b melodic-devel
-	git clone https://github.com/KUBOT-Robot/kubot_simulation.git -b melodic-devel
-	git clone https://github.com/KUBOT-Robot/kubot_slam_pkg.git -b melodic-devel
+	git clone https://github.com/SYY-Robot/kubot_base_driver.git -b melodic-devel
+	git clone https://github.com/SYY-Robot/kubot_simulation.git -b melodic-devel
+	git clone https://github.com/SYY-Robot/kubot_slam_pkg.git -b melodic-devel
 
 
 
